@@ -9,93 +9,52 @@ get_header(); ?>
 		<div class="tagline">
 			<h1><?php bloginfo( 'name' ); ?></h1>
 			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
-			<a role="button" class="download large button sites-button hide-for-small-only" href="<?php echo site_url('interest'); ?>">Sign up to learn more</a>
+			<a role="button" class="download large button sites-button hide-for-small-only" href="<?php echo site_url('interest'); ?>">Sign up for alerts when registration opens</a>
 		</div>
 	</div>
 
 </header>
 
 <?php do_action( 'foundationpress_before_content' ); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-<section class="intro" role="main">
-	<div class="fp-intro">
 
-		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-			<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-			<div class="entry-content">
-				<?php the_content(); ?>
-			</div>
-			<footer>
-				<?php
-					wp_link_pages(
-						array(
-							'before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ),
-							'after'  => '</p></nav>',
-						)
-					);
-				?>
-				<p><?php the_tags(); ?></p>
-			</footer>
-			<?php do_action( 'foundationpress_page_before_comments' ); ?>
-			<?php comments_template(); ?>
-			<?php do_action( 'foundationpress_page_after_comments' ); ?>
-		</div>
-
-	</div>
-
-</section>
-<?php endwhile; ?>
 <?php do_action( 'foundationpress_after_content' ); ?>
 
 <section class="benefits">
 	<header>
 		<h2>Learning Objectives for Creating Local Linkages</h2>
-		<h4>Consectetur a erat nam at lectus. Cursus in hac habitasse platea dictumst.Enim ut sem viverra aliquet eget sit. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum.</h4>
+		<h4>The curriculum introduces participants to the topics and practices of local history, how to frame questions about the past, identify sources to answer those questions, place them in context, and present that historical interpretation online in a digital form.</h4>
 	</header>
 
 	<div class="semantic">
 		<img src="http://via.placeholder.com/260x260" alt="placeholder">
-		<h3>Mattis enim ut tellus</h3>
-		<p>Quis ipsum suspendisse ultrices gravida dictum fusce. Pretium fusce id velit ut.</p>
+		<h3>Local History Sources</h3>
+		<p>Finding digital primary sources of local history, determining if you can use material you find, and creating metadata to describe your sources.</p>
 	</div>
 
 	<div class="responsive">
 		<img src="http://via.placeholder.com/260x260" alt="placeholder">
-		<h3>Eget dolor morbi non</h3>
-		<p>Convallis convallis tellus id interdum velit laoreet. Sed faucibus turpis in eu mi bibendum neque egestas congue.</p>
+		<h3>Analyzing Sources</h3>
+		<p>Methods of primary source analysis, examining both the content and context of sources across a variety of source types</p>
 
 	</div>
 
 	<div class="customizable">
 		<img src="http://via.placeholder.com/260x260" alt="placeholder">
-		<h3>Ante in nibh</h3>
-		<p>Magna fermentum iaculis eu non diam phasellus vestibulum lorem sed. Quam id leo in vitae turpis massa sed elementum.</p>
+		<h3>Creating contexts for historical sources</h3>
+		<p>Moving from individual sources to the wider social, cultural, economic, and political forces that influence local history</p>
 
 	</div>
 
 	<div class="professional">
 		<img src="http://via.placeholder.com/260x260" alt="placeholder">
-		<h3>Congue nisi vitae suscipit tellus</h3>
-		<p>Amet consectetur adipiscing elit pellentesque habitant. Congue nisi vitae suscipit tellus mauris.</p>
+		<h3>Building digital history exhibits</h3>
+		<p>Bringing research and analysis of the primary sources and secondary literature into the digital realm as a well-constructed online exhibit</p>
 	</div>
 
 	<div class="why-foundation">
 		<a href="/about" class="button">Learn more about the Creating Local Linkages project →</a>
 	</div>
 
-</section>
-
-<div class="section-divider">
-	<hr />
-</div>
-
-<section class="community">
-	<img src="http://via.placeholder.com/350x350" alt="placeholder">
-	<div class="copy">
-		<h2>Community</h2>
-		<p>Nibh praesent tristique magna sit amet purus gravida quis. Quam pellentesque nec nam aliquam sem et. Sit amet luctus venenatis lectus. In nisl nisi scelerisque eu ultrices vitae. Nunc mattis enim ut tellus elementum sagittis vitae et leo.</p>
-		<a role="button" class="download large button sites-button hide-for-small-only" href="<?php site_url('forums'); ?>">Explore the forums</a>
-	</div>
 </section>
 
 <?php get_footer();

@@ -4,6 +4,17 @@
   margin-top: rem-calc(60);
 }
 
+.footer-container .logos {
+  align-items: flex-start;
+  @include xy-cell(8);
+}
+
+.footer-container .logos img {
+  max-height: 3rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
 .footer-grid {
   @include xy-grid;
   padding: rem-calc(30) 0;
