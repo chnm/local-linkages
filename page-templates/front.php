@@ -26,12 +26,12 @@ get_header(); ?>
 	</header>
 
 	<div class="semantic">
-		<h3>Local History Sources</h3>
+		<h3>Local history sources</h3>
 		<p>Finding digital primary sources of local history, determining if you can use material you find, and creating metadata to describe your sources.</p>
 	</div>
 
 	<div class="responsive">
-		<h3>Analyzing Sources</h3>
+		<h3>Analyzing sources</h3>
 		<p>Methods of primary source analysis, examining both the content and context of sources across a variety of source types</p>
 
 	</div>
