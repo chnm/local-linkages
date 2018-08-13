@@ -112,6 +112,17 @@ a:hover, a:focus {
     }
 }
 
+
+.semantic,
+.responsive,
+.customizable,
+.professional {
+    background-color: $secondary-blue;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: -4px 4px 0 $dark-blue;
+}
+
 .main-container {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -148,6 +159,7 @@ a:hover, a:focus {
 
 .front-hero {
     margin: 0;
+    background-color: darken($dark-blue, 30%);
 }
 
 .front-hero .tagline {

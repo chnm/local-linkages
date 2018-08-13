@@ -18,10 +18,9 @@
   }
 
   @include breakpoint(medium) {
-    /* background: url('../images/demo/hero-bg-foundation-6-large.svg') bottom center;
+    background: url('../images/front-hero.svg') bottom center;
     background-size: cover;
     background-position: center;
-    */
     background-color: #666;
     height: rem-calc(685);
     margin: 0 0 rem-calc(72);
@@ -154,6 +153,7 @@
 
   header {
     @include xy-cell(12);
+    margin-bottom: 3rem;
 
     h2 {
       font-weight: 300;
@@ -172,6 +172,7 @@
   .professional {
     @include breakpoint(small) {
       @include xy-cell(12);
+      text-align: left;
     }
 
     @include breakpoint(medium) {
@@ -184,9 +185,8 @@
     }
 
     h3 {
-      color: #0a0a0a;
       font-weight: 300;
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
 
     p {
