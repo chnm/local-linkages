@@ -47,9 +47,11 @@ get_header(); ?>
 		<p>Bringing research and analysis of the primary sources and secondary literature into the digital realm as a well-constructed online exhibit</p>
 	</div>
 
+  <?php if (is_user_logged_in()): ?>
 	<div class="why-foundation">
-		<a href="/about" class="button">Learn more about the Creating Local Linkages project →</a>
+		<a href="<?php echo site_url(); ?>/about" class="button">Learn more about the Creating Local Linkages project →</a>
 	</div>
+  <?php endif; ?>
 
 </section>
 
