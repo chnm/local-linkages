@@ -26,27 +26,23 @@ get_header(); ?>
 	</header>
 
 	<div class="semantic">
-		<img src="http://via.placeholder.com/260x260" alt="placeholder">
 		<h3>Local History Sources</h3>
 		<p>Finding digital primary sources of local history, determining if you can use material you find, and creating metadata to describe your sources.</p>
 	</div>
 
 	<div class="responsive">
-		<img src="http://via.placeholder.com/260x260" alt="placeholder">
 		<h3>Analyzing Sources</h3>
 		<p>Methods of primary source analysis, examining both the content and context of sources across a variety of source types</p>
 
 	</div>
 
 	<div class="customizable">
-		<img src="http://via.placeholder.com/260x260" alt="placeholder">
 		<h3>Creating contexts for historical sources</h3>
 		<p>Moving from individual sources to the wider social, cultural, economic, and political forces that influence local history</p>
 
 	</div>
 
 	<div class="professional">
-		<img src="http://via.placeholder.com/260x260" alt="placeholder">
 		<h3>Building digital history exhibits</h3>
 		<p>Bringing research and analysis of the primary sources and secondary literature into the digital realm as a well-constructed online exhibit</p>
 	</div>
