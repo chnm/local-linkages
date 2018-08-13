@@ -132,6 +132,8 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
+$body-font-family: "Open Sans", sans-serif;
+$heading-font-family: "League Spartan", sans-serif;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
@@ -501,7 +503,7 @@ $offcanvas-sizes: (
 $offcanvas-vertical-sizes: (
   small: 250px,
 );
-$offcanvas-background: $dark-nav-color;
+$offcanvas-background: $purple;
 $offcanvas-shadow: 0 0 10px rgba($black, 0.7);
 $offcanvas-inner-shadow-size: 20px;
 $offcanvas-inner-shadow-color: rgba($black, 0.25);
@@ -821,7 +823,7 @@ $thumbnail-radius: $global-radius;
 // 53. Title Bar
 // -------------
 
-$titlebar-background: $dark-nav-color;
+$titlebar-background: $purple;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
@@ -848,7 +850,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0;
-$topbar-background: $dark-nav-color;
+$topbar-background: $purple;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
