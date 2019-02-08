@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Left Sidebar
+Template Name: Right Sidebar
 */
 get_header(); ?>
 
