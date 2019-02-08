@@ -34,7 +34,6 @@
 			</div>
 		</div>
 
-    <?php if(!is_front_page()): ?>
 		<nav class="site-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
@@ -51,6 +50,5 @@
 
 			</div>
 		</nav>
-    <?php endif; ?>
 
 	</header>
