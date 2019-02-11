@@ -33,6 +33,10 @@ a:hover, a:focus {
     color: $primary-blue;
 }
 
+table p {
+	margin-bottom: .5rem;
+}
+
 .top-bar {
     border-bottom: 5px solid $cyan;
 }
