@@ -39,7 +39,7 @@
       @include xy-cell(8);
     }
   }
-
+  
   .sidebar {
     @include breakpoint(small) {
       @include xy-cell(12);

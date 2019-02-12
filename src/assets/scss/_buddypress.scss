@@ -1,0 +1,99 @@
+
+.buddypress .main-grid .main-content-full-width {
+	@include breakpoint(medium) {
+	  @include xy-cell(16);
+	}
+}
+
+#bbpress-forums ul.bbp-lead-topic, 
+#bbpress-forums ul.bbp-topics, 
+#bbpress-forums ul.bbp-forums, 
+#bbpress-forums ul.bbp-replies, 
+#bbpress-forums ul.bbp-search-results {
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+}
+
+#buddypress {
+	.button,
+	button,
+	input[type="submit"] {
+	    box-shadow: none;
+	    font-family: $body-font-family;
+	    line-height: inherit;
+	    margin-bottom: 0;
+	
+	    &:hover, &:focus {
+		    box-shadow: none;
+	    }
+	}
+}
+
+.groups-header div#item-header-content {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.buddypress-wrap .bp-feedback {
+	padding: 1rem;
+}
+
+.buddypress-wrap .select-wrap select {
+	margin-bottom: 0;
+}
+
+body.buddypress .buddypress-wrap h2 {
+	margin-top: 0;
+	font-size: 1.5 * $base-font-size;
+}
+
+.single-headers .item-meta {
+	margin: 0;
+}
+
+.buddypress-wrap a[data-bp-close] span::before, 
+.buddypress-wrap button[data-bp-close] span::before {
+	font-size: inherit;
+}
+
+.bp-navs ul li .count {
+	padding: 5px 10px;
+}
+
+#bbpress-forums p.bbp-topic-meta img.avatar, 
+#bbpress-forums ul.bbp-reply-revision-log img.avatar, 
+#bbpress-forums ul.bbp-topic-revision-log img.avatar,
+#bbpress-forums div.bbp-template-notice img.avatar, 
+#bbpress-forums .widget_display_topics img.avatar, 
+#bbpress-forums .widget_display_replies img.avatar {
+	 vertical-align: middle;
+	 margin-bottom: 0;
+	 border: 0;
+ }
+ 
+.buddypress-wrap .bp-tables-user tr td.label, 
+.buddypress-wrap table.forum tr td.label, 
+.buddypress-wrap table.wp-profile-fields tr td.label {
+	border-right: 0;
+}
+
+.buddypress-wrap .bp-tables-user tbody tr, 
+.buddypress-wrap table.forum tbody tr, 
+.buddypress-wrap table.wp-profile-fields tbody tr {
+	background-color: #fff;	
+	
+	&:nth-child(2n) {
+		background-color: #f1f1f1;
+	}
+}
+
+.buddypress-wrap .bp-tables-user tr.alt td, 
+.buddypress-wrap table.wp-profile-fields tr.alt td {
+	background-color: transparent;
+}
+ 
+ .buddypress-wrap .public .profile-fields td.label {
+	 display: table-cell !important;
+	 background-color: inherit;
+	 color: inherit;
+ }
