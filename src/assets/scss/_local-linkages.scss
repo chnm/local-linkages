@@ -212,11 +212,16 @@ article h4 {
 
 .sidebar .menu a {
     font-family: $heading-font-family;
-    line-height: 1;
-    padding: 1.5rem 1rem 1.05rem 1rem;
+    line-height: 1.25;
+    padding: 1.25rem 1rem 1rem 1rem;
     display: inline-block;
     text-indent: 0;
     width: calc(100% - 2.5em);
+    vertical-align: middle;
+}
+
+.sidebar .menu .sub-menu a {
+	padding: .75rem;
 }
 
 .sidebar .menu .is-active a {
@@ -231,6 +236,29 @@ article h4 {
     text-indent: 1em;
 }
 
+.sidebar .menu .sub-menu li a {
+    font-family: $body-font-family;
+    font-weight: normal;
+}
+
+.sidebar .menu .sub-menu li.current_page_item a {
+	font-family: $heading-font-family;
+}
+
 .sidebar .menu li:not(:last-child) {
     border-bottom: 1px solid $secondary-blue;
+}
+
+.sidebar .menu .sub-menu li:not(:last-child) {
+	border-bottom: 0;
+}
+
+.menu-item .sub-menu {
+	display: none;
+	padding-bottom: .5rem;
+}
+
+.current_page_item.menu-item .sub-menu,
+.current-page-parent .sub-menu {
+	display: block;
 }
