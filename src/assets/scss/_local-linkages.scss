@@ -57,7 +57,6 @@ table p {
 .top-bar .user {
 	font-size: .8rem;
 	line-height: 1;
-	border-left: 1px solid $cyan;
 	display: flex;
 	align-content: center;
 	
@@ -93,6 +92,31 @@ table p {
 	.top-bar-right {
 		display: flex;
 	}	
+	
+	.top-bar-right .user {
+		border-left: 1px solid $cyan;
+	}
+}
+
+.title-bar-left {
+	display: flex;
+	align-items: center;
+}
+
+.title-bar-left .menu-icon {
+	box-shadow: none;
+	background-color: inherit;
+	padding: 0;
+	color: #fff;
+	margin-right: 1rem;
+}
+
+.title-bar-left a {
+	color: #fff;
+	text-transform: uppercase;	
+	letter-spacing: 2px;
+	text-shadow: -2px 2px #34D2FF;
+	font-family: $heading-font-family;
 }
 
 .home > section,
