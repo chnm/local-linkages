@@ -47,9 +47,25 @@ table p {
 }
 
 .top-bar .top-bar-title a,
-.top-bar .menu a {
+.top-bar .menu a,
+.top-bar .user a {
     color: #fff;
     font-family: $heading-font-family;
+    display: block;
+}
+
+.top-bar .user {
+	font-size: .8rem;
+	line-height: 1;
+	border-left: 1px solid $cyan;
+	display: flex;
+	align-content: center;
+	
+	a {
+		margin: 0;
+		color: #fff;
+		padding: 1rem;
+	}
 }
 
 .top-bar .top-bar-title a {
@@ -58,7 +74,8 @@ table p {
     text-shadow: -2px 2px $cyan;
 }
 
-.top-bar .menu a:hover:not(.button) {
+.top-bar .menu a:hover:not(.button),
+.top-bar .user a:hover:not(.button) {
     background-color: $dark-blue;
     color: #fff;
 }
@@ -70,6 +87,12 @@ table p {
 .top-bar .dropdown.menu .is-active > a {
     color: #fff;
     background-color: $purple;
+}
+
+@media screen and (min-width: 40em) {
+	.top-bar-right {
+		display: flex;
+	}	
 }
 
 .home > section,

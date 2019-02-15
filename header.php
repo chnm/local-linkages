@@ -43,6 +43,17 @@
 			<div class="top-bar-right">
 
     				<?php foundationpress_top_bar_r(); ?>
+    				
+    				<?php $user_id = get_current_user_id(); ?>
+    				<div class="user">
+	    				<?php if ($user_id == 0): ?>
+	    				<a class="login-link" href="<?php echo wp_login_url(); ?> ">Log in</a>
+	    				<?php else: ?>
+	    				<?php $user = get_userdata($user_id); ?>
+	    				<a href="<?php echo site_url(); ?>/members/me">Welcome, <?php echo $user->user_nicename; ?>.</a>
+	    				<a href="<?php echo wp_logout_url(); ?>">Logout?</a>
+	    				<?php endif; ?>
+    				</div>
     
     				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
     					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
