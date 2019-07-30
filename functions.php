@@ -55,3 +55,10 @@ require_once( 'library/responsive-images.php' );
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
 
 add_filter('show_admin_bar', '__return_false');
+
+add_filter('wp_mail_from_name','custom_email_from_name');
+
+function custom_email_from_name( $name ) {
+	$name = 'Do Not Reply'; // Replace the email address here //
+	return $name;
+}
