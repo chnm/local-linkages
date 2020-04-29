@@ -28,7 +28,7 @@
     "ajv": "^6.9.1",
     "foundation-sites": "6.4.3",
     "hoek": "^5.0.4",
-    "jquery": "~3.0.0",
+    "jquery": "~3.5.0",
     "lodash": "^4.17.11",
     "motion-ui": "~1.2.2",
     "tunnel-agent": "^0.6.0",
